@@ -1,0 +1,11 @@
+@use "../abstract//variables";
+
+.app-drawer {
+  background-color: variables.$black-1 !important;
+  opacity: 0.9 !important;
+  color: variables.$white !important;
+}
+
+.v-list-item-title {
+  font-weight: bold !important;
+}

@@ -1,0 +1,16 @@
+@use "../abstract//variables";
+
+.feature-title {
+  font-size: 2.25rem;
+  //   margin: 60px auto 0;
+  line-height: 1.1;
+}
+
+.feature-free {
+  color: variables.$blue;
+}
+
+.feature-text {
+  color: variables.$black-1;
+  font-family: variables.$font-family-open-sans;
+}

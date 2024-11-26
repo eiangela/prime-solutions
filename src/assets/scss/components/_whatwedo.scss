@@ -1,0 +1,53 @@
+@use "../abstract//variables";
+
+.what-image {
+  background-image: url("@/assets/images/pexels-photo-1181742.jpeg");
+  background-size: 103%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 410px;
+  // margin: auto;
+}
+
+.what-tittle {
+  font-size: 2.25rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 700;
+  line-height: 1.1;
+  word-wrap: break-word;
+  font-family: variables.$font-family-roboto !important;
+}
+
+.what-text {
+  color: variables.$black-1;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: variables.$font-family-open-sans !important;
+}
+
+.what-card-title {
+  letter-spacing: 1px !important;
+  font-size: 1.25rem !important;
+  margin: 20px auto 0;
+  color: variables.$blue;
+}
+
+.what-card-text {
+  font-family: variables.$font-family-open-sans !important;
+  margin: 14px 0;
+  color: variables.$grey;
+  font-size: 1rem !important;
+  line-height: 1.6;
+  padding: 0 !important;
+}
+
+.what-card-avatar {
+  background-color: variables.$grey2 !important;
+}
+
+.what-card-icon,
+.what-card-btn {
+  color: variables.$blue !important;
+}

@@ -1,0 +1,19 @@
+$font-roboto-path: "@/assets/fonts/roboto/";
+$font-open-sans-path: "@/assets/fonts/open-sans/";
+
+//roboto
+@font-face {
+    font-family: "Roboto";
+    src: url(#{$font-roboto-path}Roboto-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  //open sans 
+  @font-face {
+    font-family: "Open Sans";
+    src: url(#{$font-open-sans-path}OpenSans-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  

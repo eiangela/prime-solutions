@@ -11,10 +11,9 @@
     ></v-text-field>
 
     <div class="d-flex justify-center mt-5">
-      <v-app-bar-nav-icon
-        @click="drawer = !drawer"
-        variant="text"
-      ></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click="drawer = !drawer">
+        <v-icon size="40">mdi-menu</v-icon>
+      </v-app-bar-nav-icon>
     </div>
     <v-navigation-drawer
       class="app-drawer text-center"

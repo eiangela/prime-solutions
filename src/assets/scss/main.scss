@@ -1,7 +1,10 @@
 //all
+@use "fonts";
 
 //variables
 @use "./abstract/variables";
 
 //components
 @use "./components/appbar";
+@use "./components/whatwedo";
+@use "./components/freefeatures";

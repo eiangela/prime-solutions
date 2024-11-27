@@ -1,0 +1,15 @@
+@use "../abstract//variables";
+
+.markets-served,
+.markets-list__item {
+  background-color: variables.$grey4 !important;
+  padding: 10%;
+}
+
+.markets-icon__title {
+  font-size: 1.25rem;
+}
+
+.markets-list__item {
+  font-size: 1.25rem;
+}

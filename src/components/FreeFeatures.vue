@@ -13,14 +13,32 @@
         </p>
       </v-col>
 
-      <v-col cols="10" v-for="info in infos" :key="info">
-        <v-card>
-          <v-avatar>
-            <v-icon>{{ info.iconTop }}</v-icon>
+      <v-col cols="10" v-for="(info, index) in infos" :key="info">
+        <v-card
+          :class="{ 'card-blue': index === 1 }"
+          class="d-flex flex-column align-center justify-center text-center pa-3 rounded-xl"
+          elevation="7"
+        >
+          <v-avatar size="80" class="feature-avatar rounded-lg mt-5">
+            <v-icon class="feature-avatar__icon" size="60">{{
+              info.iconTop
+            }}</v-icon>
           </v-avatar>
-          <v-card-title> {{ info.title }} </v-card-title>
-          <v-card-text> {{ info.text }} </v-card-text>
-          <v-icon> {{ info.iconSeta }}</v-icon>
+          <v-card-title
+            :class="{ 'card-title-white': index === 1 }"
+            class="feature-card-title text-uppercase font-weight-bold"
+          >
+            {{ info.title }}
+          </v-card-title>
+          <v-card-text class="feature-card-text pa-0 mt-5 mb-5">
+            {{ info.text }}
+          </v-card-text>
+          <v-icon
+            :class="{ 'card-iconSeta-white': index === 1 }"
+            class="mb-10 feature-iconSeta"
+          >
+            {{ info.iconSeta }}</v-icon
+          >
         </v-card>
       </v-col>
     </v-row>

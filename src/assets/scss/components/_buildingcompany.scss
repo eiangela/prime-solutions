@@ -1,0 +1,28 @@
+@use "../abstract//variables";
+
+.building-company {
+  background-color: variables.$grey4 !important;
+}
+.build-title {
+  font-size: 2.25rem;
+}
+
+.build-text {
+  line-height: 1.6;
+  font-family: variables.$font-family-open-sans;
+}
+
+.build-btn {
+  color: variables.$white !important;
+  background-color: variables.$blue !important;
+}
+
+.build-number {
+  font-size: 3.75rem !important;
+  color: variables.$blue;
+}
+
+.build-sub-text {
+  font-size: 1.25rem !important;
+  color: variables.$black-1 !important;
+}

@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row class="d-flex justify-center align-center">
+    <v-row class="d-flex justify-center align-center mb-5">
       <v-col cols="10">
         <h2 class="text-center mt-10 mb-5 feature-title">
           Hosting is even better with all these <br />

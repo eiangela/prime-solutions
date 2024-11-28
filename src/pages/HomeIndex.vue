@@ -2,6 +2,9 @@
 import WhatWeDo from "../components/WhatWeDo.vue";
 import FreeFeatures from "../components/FreeFeatures.vue";
 import MarketsServed from "../components/MarketsServed.vue";
+import BuildingCompany from "../components/BuildingCompany.vue";
+import OurTeam from "../components/OurTeam.vue";
+import PricingTable from "../components/PricingTable.vue";
 </script>
 
 <template>
@@ -15,5 +18,17 @@ import MarketsServed from "../components/MarketsServed.vue";
 
   <section class="markets-served">
     <MarketsServed />
+  </section>
+
+  <section class="building-company">
+    <BuildingCompany />
+  </section>
+
+  <section class="our-team">
+    <OurTeam />
+  </section>
+
+  <section class="our-team">
+    <PricingTable />
   </section>
 </template>

@@ -1,9 +1,8 @@
 @use "../abstract//variables";
 
-.markets-served,
-.markets-list__item {
+.markets-served {
   background-color: variables.$grey4 !important;
-  padding: 10%;
+  // padding: 10%;
 }
 
 .markets-icon__title {
@@ -12,4 +11,9 @@
 
 .markets-list__item {
   font-size: 1.25rem;
+  background-color: variables.$grey4 !important;
+}
+
+.no-break {
+  white-space: nowrap;
 }

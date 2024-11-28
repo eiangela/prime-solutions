@@ -1,0 +1,26 @@
+@use "../abstract//variables";
+
+.team-title {
+  font-size: 2.25rem;
+}
+
+.team-name {
+  color: variables.$blue;
+  font-size: 1.25rem;
+}
+
+.team-profession {
+  color: variables.$grey3 !important;
+  font-family: variables.$font-family-open-sans;
+}
+
+.team-profession {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.team-text {
+  font-size: 1rem;
+  color: variables.$black-1;
+  font-family: variables.$font-family-open-sans;
+}

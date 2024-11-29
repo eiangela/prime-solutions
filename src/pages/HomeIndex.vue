@@ -6,6 +6,7 @@ import BuildingCompany from "../components/BuildingCompany.vue";
 import OurTeam from "../components/OurTeam.vue";
 import PricingTable from "../components/PricingTable.vue";
 import Brands from "../components/Brands.vue";
+import Users from "../components/Users.vue";
 </script>
 
 <template>
@@ -35,5 +36,9 @@ import Brands from "../components/Brands.vue";
 
   <section class="brands bg-primary">
     <Brands />
+  </section>
+
+  <section class="users">
+    <Users />
   </section>
 </template>

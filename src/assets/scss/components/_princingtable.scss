@@ -1,0 +1,60 @@
+@use "../abstract//variables";
+
+.princing-table {
+  background-color: variables.$grey4;
+}
+.princing-title {
+  font-size: 1.875rem;
+}
+
+.princing-text {
+  font-family: variables.$font-family-open-sans;
+}
+
+.p-card-title {
+  font-size: 1.25rem !important;
+}
+
+.p-card-value {
+  font-size: 3rem;
+}
+
+.p-card-subtitle {
+  font-family: variables.$font-family-open-sans;
+  color: variables.$black-1 !important;
+}
+
+.p-card-text {
+  color: variables.$grey5;
+  font-family: variables.$font-family-open-sans;
+  font-size: 1rem !important;
+}
+
+.p-card-btn {
+  color: variables.$blue !important;
+}
+
+.p-card-btn::after {
+  opacity: 1;
+}
+
+.p-card-blue {
+  background-color: variables.$blue;
+  color: variables.$white !important;
+}
+
+.p-card-text-1 {
+  color: variables.$white !important;
+}
+
+.p-card-blue {
+  background-color: variables.$blue;
+  color: variables.$white !important;
+
+  .p-card-title,
+  .p-card-value,
+  .p-card-subtitle,
+  .p-card-text {
+    color: variables.$white !important;
+  }
+}

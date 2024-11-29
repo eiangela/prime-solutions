@@ -1,18 +1,16 @@
-// import './assets/main.css'
-import './assets/scss/main.scss';
-
+// main.js
 import { createApp } from 'vue';
 import App from './App.vue';
 
-
-import { createVuetify } from 'vuetify';
+// Importações do Vuetify
+import vuetify from './vuetify'; // Importa o arquivo `vuetify.js`
 import 'vuetify/styles';
 import '@mdi/font/css/materialdesignicons.css';
 
-const vuetify = createVuetify()
+// Estilos globais
+import './assets/scss/main.scss';
 
-export default vuetify
-
+// Criação do aplicativo Vue
 createApp(App)
-.use(vuetify)
-.mount('#app')
+  .use(vuetify) // Usa a instância do Vuetify configurada
+  .mount('#app');

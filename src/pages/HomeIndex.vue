@@ -5,6 +5,7 @@ import MarketsServed from "../components/MarketsServed.vue";
 import BuildingCompany from "../components/BuildingCompany.vue";
 import OurTeam from "../components/OurTeam.vue";
 import PricingTable from "../components/PricingTable.vue";
+import Brands from "../components/Brands.vue";
 </script>
 
 <template>
@@ -28,7 +29,11 @@ import PricingTable from "../components/PricingTable.vue";
     <OurTeam />
   </section>
 
-  <section class="our-team">
+  <section class="princing-table">
     <PricingTable />
+  </section>
+
+  <section class="brands bg-primary">
+    <Brands />
   </section>
 </template>

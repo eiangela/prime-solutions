@@ -1,0 +1,11 @@
+@use "../abstract//variables";
+
+.brand-title {
+  font-size: 2.25rem;
+  line-height: 1.1;
+}
+
+.brand-text {
+  font-family: variables.$font-family-open-sans;
+  line-height: 2;
+}

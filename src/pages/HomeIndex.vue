@@ -7,6 +7,8 @@ import OurTeam from "../components/OurTeam.vue";
 import PricingTable from "../components/PricingTable.vue";
 import Brands from "../components/Brands.vue";
 import Users from "../components/Users.vue";
+import DownloadItNow from "../components/DownloadItNow.vue";
+import ContactUs from "../components/ContactUs.vue";
 </script>
 
 <template>
@@ -40,5 +42,13 @@ import Users from "../components/Users.vue";
 
   <section class="users">
     <Users />
+  </section>
+
+  <section class="download-it-now">
+    <DownloadItNow />
+  </section>
+
+  <section class="download-it-now">
+    <ContactUs />
   </section>
 </template>

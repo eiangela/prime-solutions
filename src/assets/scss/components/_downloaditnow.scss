@@ -1,0 +1,26 @@
+@use "../abstract//variables";
+
+.download {
+  background-image: linear-gradient(
+      0deg,
+      rgba(33, 98, 227, 0.5),
+      rgba(33, 98, 227, 0.5)
+    ),
+    url("@/assets/images/pexels-photo-9392381.jpeg");
+  background-position: 70% 70%;
+}
+
+.download-title,
+.download-text {
+  color: variables.$white;
+}
+
+.download-text {
+  font-family: variables.$font-family-open-sans;
+  line-height: 1.6;
+  font-size: 1.125rem;
+}
+
+.download-btn {
+  color: variables.$blue;
+}

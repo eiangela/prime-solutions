@@ -2,9 +2,7 @@
   <v-container>
     <v-row class="d-flex flex-column align-center justify-center mt-5 mb-5">
       <v-col cols="12">
-        <div
-          class="d-flex flex-column align-center justify-center pa-8 text-center"
-        >
+        <div class="d-flex flex-column align-center justify-center text-center">
           <span class="brand-title font-weight-bold"
             >Large payments volume or unique business model?</span
           ><br />

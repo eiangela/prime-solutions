@@ -1,3 +1,28 @@
-.teste-column {
-  background-color: red;
+@use "../abstract//variables";
+
+.contact__info-column {
+  background-color: variables.$grey4;
+}
+
+.contact__title {
+  font-size: 2.25rem;
+}
+
+.form__label,
+.form__input-label {
+  font-family: variables.$font-family-open-sans;
+}
+
+.form__submit-btn {
+  background-color: variables.$blue;
+  color: variables.$white;
+}
+
+.form__terms-link {
+  color: variables.$blue;
+}
+
+.contact__info-title {
+  color: variables.$blue;
+  font-size: 1.25rem;
 }

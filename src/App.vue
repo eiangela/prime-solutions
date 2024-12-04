@@ -1,6 +1,7 @@
 <script setup>
 import AppBar from "./components/AppBar.vue";
 import HomeIndex from "./pages/HomeIndex.vue";
+import FooterSection from "./components/FooterSection.vue";
 </script>
 
 <template>
@@ -9,8 +10,12 @@ import HomeIndex from "./pages/HomeIndex.vue";
       <AppBar />
     </header>
 
-    <main>
+    <v-main>
       <HomeIndex />
-    </main>
+    </v-main>
+
+    <v-footer class="footer-section">
+      <FooterSection />
+    </v-footer>
   </v-app>
 </template>

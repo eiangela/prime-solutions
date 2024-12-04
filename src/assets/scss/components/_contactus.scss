@@ -9,8 +9,9 @@
 }
 
 .form__label,
-.form__input-label {
-  font-family: variables.$font-family-open-sans;
+.form__input-label,
+.contact__info-service {
+  font-family: variables.$font-family-open-sans !important;
 }
 
 .form__submit-btn {

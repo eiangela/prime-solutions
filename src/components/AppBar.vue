@@ -1,27 +1,46 @@
 <template>
   <v-container>
-    <v-text-field
-      :loading="loading"
-      append-inner-icon="mdi-magnify"
-      label="Search"
-      variant="solo"
-      hide-details
-      single-line
-      @click:append-inner="onClick"
-    ></v-text-field>
+    <v-row class="d-flex align-center">
+      <v-col
+        cols="12"
+        md="12"
+        class="d-flex flex-column flex-sm-row flex-md-row align-center"
+      >
+        <v-col cols="12" sm="6" md="6" lg="4">
+          <v-text-field
+            :loading="loading"
+            append-inner-icon="mdi-magnify"
+            label="Search"
+            variant="solo"
+            hide-details
+            single-line
+            @click:append-inner="onClick"
+          ></v-text-field>
+        </v-col>
 
-    <div class="d-flex justify-center mt-5">
-      <v-app-bar-nav-icon @click="drawer = !drawer">
-        <v-icon size="40">mdi-menu</v-icon>
-      </v-app-bar-nav-icon>
-    </div>
-    <v-navigation-drawer
-      class="app-drawer text-center"
-      v-model="drawer"
-      temporary
-    >
-      <v-list :items="items" class="font-weight-black"> </v-list>
-    </v-navigation-drawer>
+        <v-col
+          cols="12"
+          sm="6"
+          md="6"
+          lg="8"
+          class="d-flex justify-center align-center justify-sm-end justify-md-end"
+        >
+          <div class="d-flex justify-center mt-sm-0">
+            <v-app-bar-nav-icon @click="drawer = !drawer">
+              <v-icon size="40">mdi-menu</v-icon>
+            </v-app-bar-nav-icon>
+            <v-navigation-drawer
+              class="navigation-drawer text-center"
+              v-model="drawer"
+              temporary
+            >
+              <v-list :items="items" class="font-weight-black drawer-list">
+              </v-list>
+            </v-navigation-drawer>
+          </div>
+        </v-col>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 

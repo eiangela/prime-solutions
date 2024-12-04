@@ -51,4 +51,5 @@ import ContactUs from "../components/ContactUs.vue";
   <section class="download-it-now">
     <ContactUs />
   </section>
+
 </template>

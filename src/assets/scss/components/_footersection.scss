@@ -1,0 +1,10 @@
+@use "../abstract//variables";
+
+.footer-section {
+  background-color: variables.$black-2;
+}
+
+.footer__section-text {
+  color: variables.$white;
+  font-family: variables.$font-family-open-sans;
+}

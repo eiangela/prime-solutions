@@ -36,7 +36,6 @@
                   class="text-decoration-none"
                   href="https://vuetifyjs.com"
                   target="_blank"
-                  v-bind="props"
                   @click.stop
                 >
                   <span class="form__terms-link"> Terms of Service </span>
@@ -58,20 +57,20 @@
     </v-row>
     <br /><br /><br />
     <v-row class="d-flex align-center justify-center mb-10">
-      <v-col cols="10" class="contact__info-column text-center">
+      <v-col cols="9" class="contact__info-column text-center">
         <v-col cols="12">
           <p class="text-uppercase font-weight-bold contact__info-title mb-5">
             call us
           </p>
-          <p>1(234) 567-891</p>
-          <p>1 (234) 987-654</p>
+          <p class="contact__info-service">1(234) 567-891</p>
+          <p class="contact__info-service">1 (234) 987-654</p>
         </v-col>
         <br />
         <v-col cols="12">
           <p class="text-uppercase font-weight-bold contact__info-title mb-5">
             location
           </p>
-          <p>
+          <p class="contact__info-service">
             121 Rock Sreet, 21 Avenue,<br />
             New York, NY 92103-9000
           </p>
@@ -81,9 +80,13 @@
           <p class="text-uppercase font-weight-bold contact__info-title mb-5">
             Our top services
           </p>
-          <p class="font-weight-bold">Local transfers</p>
-          <p class="font-weight-bold">Airport Transfers</p>
-          <p class="font-weight-bold">Excursions and Tours</p>
+          <p class="font-weight-bold contact__info-service">Local transfers</p>
+          <p class="font-weight-bold contact__info-service">
+            Airport Transfers
+          </p>
+          <p class="font-weight-bold contact__info-service">
+            Excursions and Tours
+          </p>
         </v-col>
       </v-col>
     </v-row>

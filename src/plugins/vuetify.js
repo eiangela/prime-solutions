@@ -1,4 +1,6 @@
-import { createVuetify } from 'vuetify';
+import {
+    createVuetify
+} from 'vuetify';
 
 export default createVuetify({
     display: {
@@ -7,7 +9,7 @@ export default createVuetify({
             xs: 320,
             sm: 480,
             md: 768,
-            lg: 992,
+            lg: 960,
             xl: 1200,
             xxl: 1500,
         },

@@ -3,16 +3,20 @@
     <v-row
       class="d-flex flex-column justify-center align-center flex-md-row justify-md-start"
     >
-      <v-col cols="12" sm="10" class="d-flex flex-column flex-md-row">
-        <v-col cols="12" sm="12" md="6" class="d-flex">
-          <div class="section-image"></div>
+      <v-col cols="12" sm="10" md="12" class="d-flex flex-column flex-md-row  align-end">
+        <v-col cols="12" sm="12" md="5">
+          <div class="section-image-wrapper">
+            <div class="section-image"></div>
+          </div>
         </v-col>
 
-        <v-col cols="10" md="11">
-          <v-col cols="5" class="d-flex justify-center">
-            <div class="d-flex flex-column pa-5">
-              <h1 class="content-title">We do business, not just marketing.</h1>
-              <p class="content-text mt-10">
+        <v-col cols="12" sm="12" md="7">
+          <v-col cols="12" sm="12" md="12" class="d-flex justify-center pa-0">
+            <div class="d-flex flex-column pa-3 pa-sm-0 pa-md-0">
+              <h1 class="content-title font-weight-bold mt-5 mt-md-0">
+                We do business, not just marketing.
+              </h1>
+              <p class="content-text mt-5 mb-5 mt-sm-5 mb-sm-5">
                 Whether your company looks for a financial consulting,
                 investment risks assessments or an interim, HR management, we’re
                 ready to provide that for you.
@@ -20,10 +24,15 @@
             </div>
           </v-col>
 
-          <v-col cols="10" class="d-flex flex-md-row">
-            <v-col cols="10" md="6" v-for="item in items" :key="item">
+          <v-col
+            cols="12"
+            sm="12"
+            md="12"
+            class="pa-0 pa-sm-0 d-flex flex-column flex-md-row"
+          >
+            <v-col cols="12" sm="12" md="6" class="pb-md-0" v-for="item in items" :key="item">
               <v-card
-                class="d-flex flex-column align-center pa-3 rounded-lg"
+                class="d-flex flex-column align-center pa-3 rounded-lg "
                 elevation="16"
               >
                 <v-avatar size="80" class="card-avatar">

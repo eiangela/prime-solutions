@@ -1,8 +1,9 @@
 <template>
   <v-container>
-    <v-row class="d-flex align-center">
+    <v-row class="d-flex align-center justify-center">
       <v-col
         cols="12"
+        sm="10"
         md="12"
         class="d-flex flex-column flex-sm-row flex-md-row align-center"
       >

@@ -5,11 +5,12 @@
   // padding: 10%;
 }
 
-.markets-icon__title {
+.section-services__title {
   font-size: 1.25rem;
 }
 
-.markets-list__item {
+.section-markets__list-item,
+.section-services__list {
   font-size: 1.25rem;
   background-color: variables.$grey4 !important;
 }

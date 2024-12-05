@@ -1,41 +1,41 @@
 <template>
   <v-container>
-    <v-row class="d-flex justify-center align-center mb-5">
-      <v-col cols="10">
-        <h2 class="text-center mt-10 mb-5 feature-title">
+    <v-row class="features-row d-flex justify-center align-center  mb-5">
+      <v-col cols="10" >
+        <h2 class="features-title text-center mt-10 mb-5">
           Hosting is even better with all these <br />
           <br />
-          <span class="feature-free">FREE</span> features
+          <span class="features-title--highlight">FREE</span> features
         </h2>
-        <p class="feature-text">
+        <p class="features-description text-center mb-5">
           Sample text. Click to select the text box. Click again or double click
           to start editing the text.
         </p>
       </v-col>
 
-      <v-col cols="10" v-for="(info, index) in infos" :key="info">
+      <v-col cols="10" sm="6" md="4" v-for="(info, index) in infos" :key="info">
         <v-card
-          :class="{ 'card-blue': index === 1 }"
-          class="d-flex flex-column align-center justify-center text-center pa-3 rounded-xl"
+          :class="{ 'features-card--highlighted': index === 1 }"
+          class="features-card d-flex flex-column align-center justify-center text-center pa-3 rounded-xl"
           elevation="7"
         >
-          <v-avatar size="80" class="feature-avatar rounded-lg mt-5">
-            <v-icon class="feature-avatar__icon" size="60">{{
+          <v-avatar size="80" class="features-avatar rounded-lg mt-5">
+            <v-icon class="features-avatar__icon" size="60">{{
               info.iconTop
             }}</v-icon>
           </v-avatar>
           <v-card-title
-            :class="{ 'card-title-white': index === 1 }"
-            class="feature-card-title text-uppercase font-weight-bold"
+            :class="{ 'features-card__title--highlighted': index === 1 }"
+            class="features-card__title text-uppercase font-weight-bold"
           >
             {{ info.title }}
           </v-card-title>
-          <v-card-text class="feature-card-text pa-0 mt-5 mb-5">
+          <v-card-text class="features-card__text pa-0 mt-5 mb-5">
             {{ info.text }}
           </v-card-text>
           <v-icon
-            :class="{ 'card-iconSeta-white': index === 1 }"
-            class="mb-10 feature-iconSeta"
+            :class="{ 'features-card__icon--highlighted': index === 1 }"
+            class="features-card__icon mb-10 feature-iconSeta"
           >
             {{ info.iconSeta }}</v-icon
           >

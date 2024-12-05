@@ -1,45 +1,45 @@
 @use "../abstract//variables";
 
-.feature-title {
+.features-title {
   font-size: 2.25rem;
   line-height: 1.1;
 }
 
-.feature-free {
+.features-title--highlight {
   color: variables.$blue;
 }
 
-.feature-text {
+.features-description {
   color: variables.$black-1;
   font-family: variables.$font-family-open-sans;
 }
 
-.feature-avatar {
+.features-avatar {
   background-color: variables.$grey2 !important;
 }
 
-.feature-avatar__icon,
-.feature-iconSeta {
+.features-avatar__icon,
+.features-card__icon {
   color: variables.$blue !important;
 }
 
-.feature-card-title {
+.features-card__title {
   letter-spacing: 1px;
   margin: 34px 0 0;
 }
 
-.feature-card-text {
+.features-card__text {
   color: variables.$grey3;
   font-family: variables.$font-family-open-sans;
   font-size: 1rem !important;
   line-height: 1.6;
 }
 
-.card-blue {
+.features-card--highlighted {
   background-color: variables.$blue !important;
 }
 
-.card-title-white,
-.card-iconSeta-white {
+.features-card__title--highlighted,
+.features-card__icon--highlighted {
   color: variables.$white !important;
 }

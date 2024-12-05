@@ -3,7 +3,12 @@
     <v-row
       class="d-flex flex-column justify-center align-center flex-md-row justify-md-start"
     >
-      <v-col cols="12" sm="10" md="12" class="d-flex flex-column flex-md-row  align-end">
+      <v-col
+        cols="12"
+        sm="10"
+        md="12"
+        class="d-flex flex-column flex-md-row align-end"
+      >
         <v-col cols="12" sm="12" md="5">
           <div class="section-image-wrapper">
             <div class="section-image"></div>
@@ -28,12 +33,19 @@
             cols="12"
             sm="12"
             md="12"
-            class="pa-0 pa-sm-0 d-flex flex-column flex-md-row"
+            class="pa-0 pa-sm-0 d-flex flex-column flex-sm-row flex-md-row"
           >
-            <v-col cols="12" sm="12" md="6" class="pb-md-0" v-for="item in items" :key="item">
+            <v-col
+              cols="12"
+              sm="6"
+              md="6"
+              class="pb-md-0"
+              v-for="item in items"
+              :key="item"
+            >
               <v-card
-                class="d-flex flex-column align-center pa-3 rounded-lg "
-                elevation="16"
+                class="d-flex flex-column align-center pa-3 rounded-lg"
+                elevation="5"
               >
                 <v-avatar size="80" class="card-avatar">
                   <v-icon class="card-icon" size="40">{{ item.icon }}</v-icon>

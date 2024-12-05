@@ -1,19 +1,25 @@
 <template>
   <v-container>
-    <v-row class="d-flex flex-column">
-      <v-col cols="7" class="d-flex align-center justify-center mt-10">
-        <v-icon class="mr-2">mdi-arrow-right</v-icon>
-        <span class="text-uppercase font-weight-bold markets-icon__title"
+    <v-row class="section-services d-flex flex-column">
+      <v-col
+        cols="7"
+        class="section-services__header d-flex align-center justify-center mt-10"
+      >
+        <v-icon class="section-services__icon mr-2">mdi-arrow-right</v-icon>
+        <span class="section-services__title text-uppercase font-weight-bold"
           >Services</span
         >
       </v-col>
 
-      <v-col cols="12" class="d-flex justify-end flex-column">
-        <v-list class="pa-0 ml-5">
+      <v-col
+        cols="12"
+        class="section-services__list-container d-flex justify-end flex-column"
+      >
+        <v-list class="section-services__list pa-0 ml-5">
           <v-list-item
             v-for="item in servicesList"
             :key="item"
-            class="markets-list__item ma-0"
+            class="section-services__list-item ma-0"
           >
             <v-icon class="mr-2" size="10">mdi-circle</v-icon>
             {{ item.item }}</v-list-item
@@ -26,7 +32,7 @@
       <v-col cols="9" class="d-flex align-center justify-center">
         <v-icon class="mr-2">mdi-arrow-right</v-icon>
         <span
-          class="text-uppercase font-weight-bold markets-icon__title no-break"
+          class="section-markets__title text-uppercase font-weight-bold no-break"
           >Markets Served</span
         >
       </v-col>
@@ -36,9 +42,11 @@
           <v-list-item
             v-for="item in marketsList"
             :key="item"
-            class="markets-list__item ma-0"
+            class="section-markets__list-item ma-0"
           >
-            <v-icon class="mr-2" size="10">mdi-circle</v-icon>
+            <v-icon class="section-markets__list-icon mr-2" size="10"
+              >mdi-circle</v-icon
+            >
             {{ item.item }}</v-list-item
           >
         </v-list>

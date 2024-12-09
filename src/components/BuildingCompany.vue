@@ -1,27 +1,7 @@
 <template>
   <v-container>
-    <v-row class="d-flex flex-column align-center mb-5">
-      <v-col cols="10">
-        <h3 class="build-title mb-6">About Eagle Building Company</h3>
-        <p class="build-text">
-          Our mission is to Create Successful Partnerships. By doing so, we
-          focus on ensuring a competitive edge and strive to make the building
-          process a positive experience for our clients. <br /><br />
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </v-col>
-
-      <v-col cols="10">
-        <v-btn rounded="0" class="build-btn mb-5" width="180" height="60"
-          >contact us</v-btn
-        >
-      </v-col>
-
-      <v-col cols="10" v-for="infos in infosNumber" :key="infos">
+    <v-row class="d-flex flex-column align-center mb-5 flex-md-row">
+      <v-col cols="12" sm="12" md="12" v-for="infos in infosNumber" :key="infos">
         <v-card
           class="d-flex flex-column align-center pa-5 rounded-xl"
           elevation="8"

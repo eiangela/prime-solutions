@@ -22,7 +22,7 @@ $xl: 1200px;
 $xxl: 1500px;
 
 // Media Queries Personalizadas
-$extra-extra-large-device: "(min-width: 2561px)"; // telas grandes >2561px
+$xxxl_device: "(min-width: #{$xxl})"; // telas maiores que 1500px
 $large_device: "(min-width: #{$xl}) and (max-width: #{$xxl})"; // desktop 1200-1500px
 
 $mid_device: "(min-width: #{$lg}) and (max-width: #{$xl})"; // desktop normal 992-1200px

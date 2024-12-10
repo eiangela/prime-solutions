@@ -1,11 +1,18 @@
 @use "../abstract//variables";
 
-.brand-title {
+.section-header__title {
   font-size: 2.25rem;
   line-height: 1.1;
 }
 
-.brand-text {
+.section-header__description {
   font-family: variables.$font-family-open-sans;
   line-height: 2;
 }
+
+//large desktop devices
+// @media (variables.$xxxl_device) {
+//   .image-column__container {
+//     width: 150px !important;
+//   }
+// }

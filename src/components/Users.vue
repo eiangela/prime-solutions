@@ -11,6 +11,8 @@
 
       <v-col
         cols="10"
+        md="6"
+        lg="4"
         v-for="(user, index) in opinionUsers"
         :key="user"
         class=""

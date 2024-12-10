@@ -1,7 +1,7 @@
 <template>
   <v-container>
-    <v-row class="d-flex flex-column align-center mb-5 flex-md-row">
-      <v-col cols="12" sm="12" md="12" v-for="infos in infosNumber" :key="infos">
+    <v-row class="d-flex flex-column align-center mb-5 flex-sm-row flex-md-row">
+      <v-col cols="12" sm="6" md="3" v-for="infos in infosNumber" :key="infos">
         <v-card
           class="d-flex flex-column align-center pa-5 rounded-xl"
           elevation="8"

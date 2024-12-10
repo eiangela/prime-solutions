@@ -49,7 +49,7 @@ import ContactUs from "../components/ContactUs.vue";
   </section>
 
   <section class="download-it-now">
-    <ContactUs />
+    <ContactUs  />
   </section>
 
 </template>

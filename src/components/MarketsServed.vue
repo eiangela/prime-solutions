@@ -35,15 +35,15 @@
           cols="12"
           sm="12"
           md="6"
-          class="d-flex flex-column flex-sm-row align-center"
+          class="d-flex flex-column flex-sm-row flex-md-column align-center"
         >
           <v-col
             cols="12"
             sm="6"
-            md="6"
+            md="7"
             class="section-services__list-container d-flex justify-end flex-column"
           >
-            <div class="d-flex align-center justify-center">
+            <div class="d-flex align-center">
               <v-icon class="section-services__icon mr-2"
                 >mdi-arrow-right</v-icon
               >
@@ -66,8 +66,8 @@
             </div>
           </v-col>
 
-          <v-col cols="12" sm="6" md="6" class="d-flex justify-end flex-column">
-            <div class="d-flex align-center justify-center">
+          <v-col cols="12" sm="6" md="7" class="d-flex justify-end flex-column">
+            <div class="d-flex align-center">
               <v-icon class="mr-2">mdi-arrow-right</v-icon>
               <span
                 class="section-markets__title text-uppercase font-weight-bold no-break"

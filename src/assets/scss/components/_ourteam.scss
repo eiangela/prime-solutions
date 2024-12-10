@@ -24,3 +24,17 @@
   color: variables.$black-1;
   font-family: variables.$font-family-open-sans;
 }
+
+//desktop normal
+@media (variables.$mid_device) {
+  .team-text {
+    font-size: 14px;
+  }
+}
+
+//large desktop devices
+@media (variables.$xxxl_device) {
+  .team-text {
+    font-size: 15px;
+  }
+}

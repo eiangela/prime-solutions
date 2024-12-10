@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row class="d-flex align-center justify-center mb-5 mt-5">
-      <v-col cols="12">
+      <v-col cols="12" sm="10" md="10">
         <div class="d-flex align-center justify-center flex-column pa-6">
           <span class="princing-title font-weight-bold mb-5"
             >Pricing Table</span
@@ -14,7 +14,13 @@
         </div>
       </v-col>
 
-      <v-col cols="10" v-for="(infoCard, index) in cardInfos" :key="infoCard">
+      <v-col
+        cols="10"
+        sm="6"
+        md="4"
+        v-for="(infoCard, index) in cardInfos"
+        :key="infoCard"
+      >
         <v-card
           :class="{ 'p-card-blue': index === 1 }"
           class="d-flex flex-column justify-center align-center pa-5 rounded-xl"

@@ -19,7 +19,8 @@
   background-color: variables.$blue !important;
 }
 
-.section-services__title {
+.section-services__title,
+.section-markets__title {
   font-size: 1.25rem;
 }
 
@@ -37,11 +38,9 @@
 @media (variables.$tablet_device) {
   .section-services__title,
   .section-markets__title {
-    font-size: 1.125rem ;
+    font-size: 1.125rem;
   }
 }
-
-
 
 //desktop normal
 @media (variables.$mid_device) {
@@ -58,6 +57,6 @@
 
   .section-services__title,
   .section-markets__title {
-    font-size: 1.125rem ;
+    font-size: 1.125rem;
   }
 }

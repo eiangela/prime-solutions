@@ -1,28 +1,43 @@
 <template>
   <v-container>
-    <v-row class="d-flex flex-column align-center justify-center mt-5 mb-5">
-      <v-col cols="12">
-        <div class="d-flex flex-column align-center justify-center text-center">
-          <span class="brand-title font-weight-bold"
-            >Large payments volume or unique business model?</span
-          ><br />
-          <p class="brand-text">
-            Phasellus sed efficitur dolor, et ultricies sapien. Quisque
-            fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In
-            ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.
-          </p>
-        </div>
-      </v-col>
+    <v-row
+      class="section-container d-flex flex-column flex-md-row align-center justify-center mt-5 mb-5"
+    >
+      <v-col cols="12" md="9">
+        <v-row>
+          <v-col cols="12" md="12">
+            <div
+              class="section-header d-flex flex-column align-center justify-center text-center"
+            >
+              <span class="section-header__title font-weight-bold">
+                Large payments volume or unique business model?
+              </span>
+              <br />
+              <p class="section-header__description">
+                Phasellus sed efficitur dolor, et ultricies sapien. Quisque
+                fringilla sit amet dolor commodo efficitur. Aliquam et sem odio.
+                In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.
+              </p>
+            </div>
+          </v-col>
 
-      <v-col cols="7" v-for="(image, index) in images" :key="index">
-        <div class="d-flex justify-center align-center bg-primary mt-5">
-          <v-img
-            :width="200"
-            aspect-ratio="16/9"
-            cover
-            :src="image.image"
-          ></v-img>
-        </div>
+          <v-col
+            v-for="(image, index) in images"
+            :key="index"
+            cols="12"
+            md="3"
+            class="d-flex flex-column justify-center align-center mt-5"
+          >
+            <div class="image-column__container bg-primary">
+              <v-img
+                :width="150"
+                aspect-ratio="16/9"
+                class="teste-image"
+                :src="image.image"
+              ></v-img>
+            </div>
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
   </v-container>

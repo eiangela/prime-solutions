@@ -17,3 +17,9 @@ $font-open-sans-path: "@/assets/fonts/open-sans/";
     font-style: normal;
   }
   
+  @font-face {
+    font-family: "Open Sans";
+    src: url(#{$font-open-sans-path}OpenSans-Light.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }

@@ -9,10 +9,15 @@
             </p>
           </div>
 
-          <v-form>
+          <v-form ref="vFormRef" @submit.prevent="validateForm">
             <v-col cols="12">
               <div class="form__label font-weight-bold">Name</div>
-              <v-text-field single-line variant="underlined">
+              <v-text-field
+                :rules="[requiredValidator]"
+                v-model="formData.name"
+                single-line
+                variant="underlined"
+              >
                 <template v-slot:label>
                   <span class="form__input-label">Enter your name</span>
                 </template>
@@ -21,7 +26,12 @@
 
             <v-col cols="12">
               <div class="form__label font-weight-bold">E-mail</div>
-              <v-text-field single-line variant="underlined">
+              <v-text-field
+                :rules="[emailValidator, requiredValidator]"
+                v-model="formData.email"
+                single-line
+                variant="underlined"
+              >
                 <template v-slot:label>
                   <span class="form__input-label"
                     >Enter a valid email address</span
@@ -32,9 +42,16 @@
 
             <v-col cols="12">
               <div class="form__label font-weight-bold">Message</div>
-              <v-textarea variant="underlined"></v-textarea>
+              <v-textarea
+                :rules="[requiredValidator]"
+                v-model="formData.message"
+                variant="underlined"
+              ></v-textarea>
 
-              <v-checkbox v-model="checkbox">
+              <v-checkbox
+                :rules="[requiredValidator]"
+                v-model="formData.agreeToTerms"
+              >
                 <template v-slot:label>
                   <div>
                     I accept the
@@ -56,6 +73,7 @@
                 block
                 size="x-large"
                 class="form__submit-btn font-weight-bold rounded-lg"
+                type="submit"
                 >Submit</v-btn
               >
             </v-col>
@@ -109,7 +127,33 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { requiredValidator, emailValidator } from "../utils/validators.js";
 
+import { reactive, ref } from "vue";
+
+const vFormRef = ref();
 const checkbox = ref(false);
+
+const formData = reactive({
+  name: "",
+  email: "",
+  message: "",
+  agreeToTerms: false,
+});
+
+const validateForm = () => {
+  vFormRef.value?.validate().then(({ valid: isValid }) => {
+    if (isValid) {
+      const formDataToSend = {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+        agreeToTerms: formData.agreeToTerms,
+      };
+      console.log("Dados do formulário:", formDataToSend);
+
+      vFormRef.value?.reset();
+    }
+  });
+};
 </script>

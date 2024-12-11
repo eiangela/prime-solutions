@@ -14,7 +14,7 @@ import FooterSection from "./components/FooterSection.vue";
       <HomeIndex />
     </v-main>
 
-    <v-footer class="footer-section">
+    <v-footer border class="footer-section text-center">
       <FooterSection />
     </v-footer>
   </v-app>

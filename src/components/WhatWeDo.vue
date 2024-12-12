@@ -7,6 +7,7 @@
         cols="12"
         sm="10"
         md="12"
+        lg="12"
         class="d-flex flex-column flex-md-row align-end"
       >
         <v-col cols="12" sm="12" md="5">
@@ -15,7 +16,7 @@
           </div>
         </v-col>
 
-        <v-col cols="12" sm="12" md="7">
+        <v-col cols="12" sm="12" md="7" lg="7">
           <v-col cols="12" sm="12" md="12" class="d-flex justify-center pa-0">
             <div class="d-flex flex-column pa-3 pa-sm-0 pa-md-0">
               <h1 class="content-title font-weight-bold mt-5 mt-md-0">
@@ -33,12 +34,14 @@
             cols="12"
             sm="12"
             md="12"
+            lg="12"
             class="pa-0 pa-sm-0 d-flex flex-column flex-sm-row flex-md-row"
           >
             <v-col
               cols="12"
               sm="6"
               md="6"
+              lg="6"
               class="pb-md-0"
               v-for="item in items"
               :key="item"

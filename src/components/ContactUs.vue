@@ -81,7 +81,7 @@
         </v-col>
       </v-row>
 
-      <v-row class="d-flex align-center justify-center">
+      <v-row class="d-flex align-center justify-center mb-10">
         <v-col
           cols="9"
           sm="10"

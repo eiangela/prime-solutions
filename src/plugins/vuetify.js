@@ -1,6 +1,4 @@
-import {
-    createVuetify
-} from 'vuetify';
+import { createVuetify } from 'vuetify';
 
 export default createVuetify({
     display: {
@@ -12,6 +10,17 @@ export default createVuetify({
             lg: 960,
             xl: 1200,
             xxl: 1500,
+        },
+    },
+    theme: {
+        defaultTheme: 'primeTheme',
+        themes: {
+            primeTheme: {
+                dark: false,
+                colors: {
+                    primary: '#2162e3',
+                },
+            },
         },
     },
 });
